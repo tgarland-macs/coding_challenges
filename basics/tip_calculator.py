@@ -1,3 +1,4 @@
+#
 bill_amount = input("Enter the total bill amount: ")
 print(bill_amount)
 
