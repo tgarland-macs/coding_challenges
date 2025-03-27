@@ -8,17 +8,14 @@ df = pd.DataFrame({
 }
 )
 
-# Return the DataFrame to check
-# print(df.head())
-
 # Now let's apply a filter that returns just black and white film
 black_and_white = df[(df['film_type'] == 'Black & White')]
-print(black_and_white.head())
+print("B&W Check:\n", black_and_white.head())
 
 # And now only for colour
 colour = df[(df['film_type'] == 'Colour')]
-print(colour.head())
+print("Colour film check:\n", colour.head())
 
-# Now let's return film that is both colour and ISO 400
+# Finally, let's return film that is both colour and ISO 400
 colour_and_iso_400 = df[(df['film_type'] == 'Colour') & (df['film_iso'] == '400')]
-print(colour_and_iso_400.head())
+print("Final filtered DataFrame:\n", colour_and_iso_400.head())
